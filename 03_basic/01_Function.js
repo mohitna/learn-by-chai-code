@@ -1,5 +1,5 @@
 function addTwoNumbers(number1, number2) {
-    if (typeof number1 === "number" && typeof number2 === "number") {
+    if (typeof number1 === "number" && typeof number2 === "number") {  // comparision datatype "number" instands of (Number) datatype
         return number1 + number2;
     }
     console.log("Please provide the correct data type");
