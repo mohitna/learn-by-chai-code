@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Or Me</title>
+</head>
+<body style="background-color: black; color: whitesmoke;">
+    
+</body>
+<script>
+       const addElemnt=document.createElement('div')
+       console.log(addElemnt) 
+
+       addElemnt.className="Demo"
+       addElemnt.id=Math.round(Math.random()*10)
+       addElemnt.style.backgroundColor="green"
+       addElemnt.style.padding="15px"
+     //  addElemnt.innerText="chai or me "
+
+     const addText=document.createTextNode("Chai or me ")
+     addElemnt.append(addText) // phle test ko attach kiya 
+
+     document.body.append(addElemnt)// fir div(element ) ko attach kiya 
+
+</script>
+</html>
