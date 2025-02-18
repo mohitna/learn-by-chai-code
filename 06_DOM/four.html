@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code With me | DOM</title>
+</head>
+<body>
+     <ul class="language">
+        <li>javascript</li>
+     </ul>
+</body>
+
+<script>
+
+function addElement(addLang)
+{
+    const li=document.createElement('li')
+    li.innerText=`${addLang}`
+    document.querySelector('.language').appendChild(li)
+}
+addElement("react")
+addElement("MongoDB")
+
+function addsecond(addLang)
+{
+    const li=document.createElement('li')
+    li.appendChild(document.createTextNode(addLang))
+    document.querySelector('.language').appendChild(li);
+}
+addsecond("type")
+
+const additem=document.querySelector('li:nth-child(2)')
+
+const newli=document.createElement('li')
+
+newli.innerHTML="mojo"
+
+additem.replaceWith(newli)
+
+
+const Rfirst=document.querySelector('li:first-child')
+
+Rfirst.remove()
+
+
+</script>
+
+</html>
